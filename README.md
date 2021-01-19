@@ -25,3 +25,7 @@ cd zJetAnalysis
 mkedanalyzer ZJetAnalyzer
 cd ZJetAnalyzer
 ```
+##### Now there should be the following seven directories in the ED Analyzer template
+```
+BuildFile.xml   doc   interface   python    src   test    zjetanalyzer_cfg.py
+```
