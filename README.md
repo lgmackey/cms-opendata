@@ -11,8 +11,16 @@ cd ./WorkingArea
 cmsrel CMSSW_5_3_32
 cd ./CMSSW_5_3_32/src
 cmsenv
-git clone git://github.com/cms-opendata-validation/2011-jet-inclusivecrosssection-ntupleproduction-optimized.git
-scram b
-cd 2011-jet-inclusivecrosssection-ntupleproduction-optimized/AnalysisFW/python/
 ```
 
+## Creating an EDAnalyzer Template
+```
+#first you must create a directory
+mkdir zJetAnalysis
+
+#then make the analyzer
+mkedanalyzer ZJetAnalyzer
+
+#move to the analyzer 
+cd ZJetAnalyzer
+```
