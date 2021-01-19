@@ -15,12 +15,13 @@ cmsenv
 
 ## Creating an EDAnalyzer Template
 ```
-#first you must create a directory
+## first you must create a directory
 mkdir zJetAnalysis
+cd zJetAnalysis
 
-#then make the analyzer
+## then make the analyzer
 mkedanalyzer ZJetAnalyzer
 
-#move to the analyzer 
+## move to the analyzer 
 cd ZJetAnalyzer
 ```
