@@ -7,21 +7,21 @@ The instructions assume that you will work on a VM properly contextualized for C
 ## Creating the Working Area 
 ```
 mkdir WorkingArea
-cd ./WorkingArea
+cd WorkingArea
 cmsrel CMSSW_5_3_32
-cd ./CMSSW_5_3_32/src
+cd CMSSW_5_3_32/src
 cmsenv
 ```
 
 ## Creating an EDAnalyzer Template
+
+##### First, create a directory
 ```
-## first you must create a directory
 mkdir zJetAnalysis
 cd zJetAnalysis
-
-## then make the analyzer
+```
+##### Then, make the Analyzer
+```
 mkedanalyzer ZJetAnalyzer
-
-## move to the analyzer 
 cd ZJetAnalyzer
 ```
