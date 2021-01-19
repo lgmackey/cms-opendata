@@ -1,4 +1,4 @@
-# CMS Jet-Z boson analysis
+# CMS Jet-Z boson Analysis
 
 This project is a CMSSW module ...... (edit desctiption)
 
