@@ -54,6 +54,15 @@ for copy. To paste, use
 ```
 shift + cntrl + v
 ```
+You can also use 
+``` 
+cntrl + [-]
+```
+to zoom out of the CMS Shell Terminal window, and 
+```
+shift + cntrl + [+]
+```
+to zoom in.
 
 If you're using **vi** to open files from the command line, the command
 ``` 
