@@ -63,7 +63,7 @@ Once you have these files downloaded, you should compile the source code file. T
 ```
 scram b
 ```
-If you see a line that starts with `>> Building edm plugin `, the .cc file was successfully compiled without errors. You can move back up a directory by typing
+If you see a message that starts with `>> Building edm plugin `, the .cc file was successfully compiled without errors. You can move back up a directory by typing
 ```
 cd ..
 ```
