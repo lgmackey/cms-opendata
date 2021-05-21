@@ -135,3 +135,13 @@ To move the file from the HPC to your local machine, open a new Terminal window.
 scp username@uahpc.ua.edu:filename .
 ```
 After typing in your password, you should see the same message indicating the file has been copied. 
+
+## Resources
+The CMS Open Data website has several useful examples to gain familiarity with the VirtualBox software and the CMS environment. 
+Other GitHub repositories using similar analyses can be found here: http://opendata.cern.ch/search?page=1&size=20&type=Software&subtype=Analysis&experiment=CMS&year=2011&year=2011-2012
+
+Two useful ones that I used to build this code were:
+1. http://opendata.cern.ch/record/5104
+2. http://opendata.cern.ch/record/234
+
+
