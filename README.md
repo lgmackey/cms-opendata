@@ -44,6 +44,8 @@ Once you've logged in on your local machine, go back to virtualBox and navigate 
 ```
 scp filename username@uahpc.ua.edu
 ```
-Once you type your password, you should see a message that looks like: 
-**zJet_cfg.py                                        100% 5250     5.1KB/s   00:00**
+Once you type your password, you should see a message that looks like:
+```
+zJet_cfg.py                                        100% 5250     5.1KB/s   00:00
+```
 and you can check in Terminal that the file has been successfully copied by typing **ls**.
