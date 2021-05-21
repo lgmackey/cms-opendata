@@ -29,6 +29,9 @@ cd ZJetAnalyzer
 ```
 BuildFile.xml   doc   interface   python    src   test    zjetanalyzer_cfg.py
 ```
+
+## Using the Analyzer
+
 A C++ source code file will be automatically created in the `src` directory, so use `cd src` to access it. `zjetanalyzer_cfg.py` is the configuration file that will be used to run the source code. 
 
 Copy the `zJet_cfg.py` file from this page to the `zjetanalyzer_cfg.py` file in your virtual machine. 
