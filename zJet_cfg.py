@@ -26,7 +26,7 @@ process.source.fileNames = cms.untracked.vstring(*files2011data)
 # Read condition data from local sqlite database
 if runOnVM:
     process.GlobalTag.connect = cms.string('sqlite_file:/cvmfs/cms-opendata-conddb.cern.ch/START53_V27.db')
-
+#CHANGE GLOBAL TAG HERE
 
 # Read good luminosity sections from local JSON file
 #import FWCore.PythonUtilities.LumiList as LumiList 
@@ -39,7 +39,7 @@ if runOnVM:
 # Global tag for 2011A data
 #process.GlobalTag.globaltag = 'FT_53_LV5_AN1::All'
 process.GlobalTag.globaltag = 'START53_V27::All'
-
+#CHANGE GLOBAL TAG HERE
 
 # Select good vertices
 process.goodOfflinePrimaryVertices = cms.EDFilter(
@@ -119,12 +119,12 @@ process.p = cms.Path(
 # 50000 events per 1 hour (both for DATA and MC)
 
 # Change number of events here:
-process.maxEvents.input = 10000
+process.maxEvents.input = 96000
 
 process.MessageLogger.cerr.FwkReport.reportEvery = 100
 
-# Output file
-process.TFileService = cms.Service("TFileService", fileName = cms.string('zJet_80to120_new.root'))
+# Change Output file name here
+process.TFileService = cms.Service("TFileService", fileName = cms.string('zJet_80to120.root'))
 
 
 # To suppress long output at the end of the job
