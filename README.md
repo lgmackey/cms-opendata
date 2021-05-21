@@ -50,7 +50,7 @@ If you decide to run on Data instead of Monte Carlo simulations, you will also h
 ```
 wget http://opendata.cern.ch/record/1001/files/Cert_160404-180252_7TeV_ReRecoNov08_Collisions11_JSON.txt
 ```
-to get a JSON file for good runs. Another change you will have to make when running on Data is to uncommented lines 32-36 (listed below) in the `zJet_cfg.py` file.
+to get a JSON file for good runs. Another change you will have to make when running on Data is to uncomment lines 32-36 (listed below) in the `zJet_cfg.py` file.
 ```
 #import FWCore.PythonUtilities.LumiList as LumiList 
 #goodJSON = './Cert_160404-180252_7TeV_ReRecoNov08_Collisions11_JSON.txt' 
