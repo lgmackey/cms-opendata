@@ -43,6 +43,24 @@ cmd + shift + [.]
 ```
 to show any hidden folders. Go into the **Library** folder (it might be greyed out, but still click it), and open the VirtualBox folder. Use the same method as before, but using the *VirtualBox.xml* and *VirtualBox.xml-prev* files instead. 
 
+## Useful Commands for VirtualBox on Mac
+The first time you open a virtual machine on VirtualBox, the viewing window will be very small and you will not be able to change the size by just dragging the window bigger. You can change this by clicking **Settings > Display** in VirtualBox, and changing the scale factor to 200%. 
+
+The Copy and Paste keyboard commands in VirtualBox are different than they are for regular Mac use. You can use 
+```
+shift + cntrl + c
+```
+for copy. To paste, use 
+```
+shift + cntrl + v
+```
+
+If you're using **vi** to open files from the command line, the command
+``` 
+:set number
+```
+was useful when a compiling error gave a number line that the error was found on. 
+
 ## Copying Files to the HPC
 You can save files to your personal computer from the virtual machine using UA's High Performance Computer if you get access to it. To do so, connect to the VPN, open a new Terminal (on Mac), and type
 ```
