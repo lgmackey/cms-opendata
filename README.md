@@ -1,6 +1,6 @@
 # CMS Z-Jet Analysis
 
-This project is a CMSSW module ...... (edit desctiption)
+This project is a CMSSW module that runs an analysis for events containing jets and muon decays. The source code, written in C++, will choose jets based on the highest transverse momentum (pt) value and reconstruct Z-bosons from a dimuon decay. Muon selections have been added in order to choose the best muons for analysis, and an excited quark is reconstructed after combining the best Z candidate with the jet. 
 
 The instructions assume that you will work on a VM properly contextualized for CMS, available from http://opendata.cern.ch/VM/CMS.
 
