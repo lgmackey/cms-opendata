@@ -29,7 +29,48 @@ cd ZJetAnalyzer
 ```
 BuildFile.xml   doc   interface   python    src   test    zjetanalyzer_cfg.py
 ```
-A C++ source code file will be automatically created in the **src** directory, so use **cd src** to access it. The configuration file that will be used to 
+A C++ source code file will be automatically created in the **src** directory, so use **cd src** to access it. *zjetanalyzer_cfg.py* is the configuration file that will be used to run the source code. 
+
+Copy the *zJet_cfg.py* file from this page to the *zjetanalyzer_cfg.py* file in your virtual machine. 
+
+*Note: it might be easier to rename the file in the VM so that all the file names are consistent and easier to follow along with.*
+
+Move into the **src** directory, and copy the *ZJetAnalyzer.cc* file into the .cc file that was automatically created. 
+
+With `/home/cms-opendata/workingArea/CMSSW_5_3_32/src/zJetAnalysis/ZJetAnalyzer` as the current folder, run the following commands to download the files needed
+```
+wget http://opendata.cern.ch/record/10048/files/CMS_MonteCarlo2012_Summer12_DR53X_ZJetToMuMu_Pt-80to120_TuneEE3C_8TeV_herwigpp_AODSIM_PU_S10_START53_V19-v1_20000_file_index.txt
+
+ln -sf /cvmfs/cms-opendata-conddb.cern.ch/START53_V27
+```
+
+To understand the file names, record numbers, global tags and how to find that information for other files to run on, use http://opendata.cern.ch/search?page=1&size=200&q=&subtype=Simulated&experiment=CMS&year=2012&type=Dataset&subcategory=Drell-Yan&subcategory=ElectroWeak&category=Standard%20Model%20Physics to see the list of simulated datasets on the Open Data website. I narrowed these down to the eight datasets that involved simulating a Z-jet decay (ZJetToMuMu_) using different pt values. Here is the link to the dataset this code uses: http://opendata.cern.ch/record/10048
+
+If you decide to run on Data instead of Monte Carlo simulations, you will also have to run 
+```
+wget http://opendata.cern.ch/record/1001/files/Cert_160404-180252_7TeV_ReRecoNov08_Collisions11_JSON.txt
+```
+to get a JSON file for good runs. Another change you will have to make when running on Data is to uncommented lines 32-36 (listed below) in the `zJet_cfg.py` file.
+```
+#import FWCore.PythonUtilities.LumiList as LumiList 
+#goodJSON = './Cert_160404-180252_7TeV_ReRecoNov08_Collisions11_JSON.txt' 
+#myLumis = LumiList.LumiList(filename = goodJSON).getCMSSWString().split(',') 
+#process.source.lumisToProcess = cms.untracked.VLuminosityBlockRange() 
+#process.source.lumisToProcess.extend(myLumis)
+```
+
+Once you have these files downloaded, you should compile the source code file. To do this, move into the `src` directory, and type
+```
+scram b
+```
+If you see a line that starts with `>> Building edm plugin `, the .cc file was successfully compiled without errors. You can move back up a directory by typing
+```
+cd ..
+```
+and run the configuration file by typing the command
+```
+cmsRun zJet_cfg.py
+```
 
 ## Troubleshooting
 The VirtualBox software itself and the virtual machine are both hard to work with sometimes if not closed properly. Always *power off the machine* instead of *saving the current state.* 
