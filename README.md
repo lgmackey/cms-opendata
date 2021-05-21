@@ -1,4 +1,4 @@
-# CMS Jet-Z boson Analysis
+# CMS Z-Jet Analysis
 
 This project is a CMSSW module ...... (edit desctiption)
 
@@ -29,3 +29,7 @@ cd ZJetAnalyzer
 ```
 BuildFile.xml   doc   interface   python    src   test    zjetanalyzer_cfg.py
 ```
+
+##### Troubleshooting
+The VirtualBox software itself and the virtual machine are both hard to work with sometimes if not closed properly. Always *power down* the machine instead of *saving the current state.* Upon reopening, VirtualBox will most likely notify you that there is a new version of the software available. DO NOT UPDATE unless there is a newer version of the software that has been tested and approved. That information can be found on the Open Data website. 
+
