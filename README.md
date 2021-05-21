@@ -95,7 +95,7 @@ shift + cntrl + [+]
 ```
 to zoom in.
 
-If you're using **vi** to open files from the command line, the command
+If you're using `vi` to open files from the command line, the command
 ``` 
 :set number
 ```
