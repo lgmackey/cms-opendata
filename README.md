@@ -71,19 +71,6 @@ and run the configuration file by typing the command
 ```
 cmsRun zJet_cfg.py
 ```
-
-## Troubleshooting
-The VirtualBox software itself and the virtual machine are both hard to work with sometimes if not closed properly. Always *power off the machine* instead of *saving the current state.* 
-Upon reopening, VirtualBox will most likely notify you that there is a new version of the software available. DO NOT UPDATE unless there is a newer version of the software that has been tested and approved. That information can be found on the Open Data website. 
-
-Sometimes when either the virtual machine or the VirtualBox software itself doesn't close properly, you will get a scary error that won't allow you to open it or it will look like the virtual machine is gone. To fix this on a Mac, open Finder. Navigate to the folder where you downloaded the VirtualBox software. The easiest way to find the file you need is to type **CMS** into the search bar and scroll down until you find the files named *CMS-OpenData-1.5.3.vbox* and *CMS-OpenData-1.5.3.vbox-prev*. (This is the version I've been using but depending on updates, your version number may be different.) Right click on one of the files and open with a text editing software (I use TextEditor), but DO NOT ACTUALLY EDIT THE CODE. The file with the "-prev" extension is the temporary file that VirtualBox makes when you open the software. Sometimes the file without the "-prev" extension doesn't close or save correctly, so you won't see any code when you open it with a text editor. To fix it, move the *CMS-OpenData-1.5.3.vbox* file to a different directory or folder, and rename the *CMS-OpenData-1.5.3.vbox-prev* file to *CMS-OpenData-1.5.3.vbox*. Once you verify that VirtualBox can open correctly again, it's safe to delete the empty file.
-
-This problem can also occur with the VirtualBox software instead of just the virtual machine file. If neither of the two **.vbox** files are empty, navigate in Finder to your home directory. Use keyboard shortcut
-```
-cmd + shift + [.]
-```
-to show any hidden folders. Go into the **Library** folder (it might be greyed out, but still click it), and open the VirtualBox folder. Use the same method as before, but using the *VirtualBox.xml* and *VirtualBox.xml-prev* files instead. 
-
 ## Useful Commands for VirtualBox on Mac
 The first time you open a virtual machine on VirtualBox, the viewing window will be very small and you will not be able to change the size by just dragging the window bigger. You can change this by clicking **Settings > Display** in VirtualBox, and changing the scale factor to 200%. 
 
@@ -110,6 +97,19 @@ If you're using **vi** to open files from the command line, the command
 :set number
 ```
 was useful when a compiling error gave a number line that the error was found on. 
+
+## Troubleshooting
+The VirtualBox software itself and the virtual machine are both hard to work with sometimes if not closed properly. Always *power off the machine* instead of *saving the current state.* 
+Upon reopening, VirtualBox will most likely notify you that there is a new version of the software available. DO NOT UPDATE unless there is a newer version of the software that has been tested and approved. That information can be found on the Open Data website. 
+
+Sometimes when either the virtual machine or the VirtualBox software itself doesn't close properly, you will get a scary error that won't allow you to open it or it will look like the virtual machine is gone. To fix this on a Mac, open Finder. Navigate to the folder where you downloaded the VirtualBox software. The easiest way to find the file you need is to type **CMS** into the search bar and scroll down until you find the files named *CMS-OpenData-1.5.3.vbox* and *CMS-OpenData-1.5.3.vbox-prev*. (This is the version I've been using but depending on updates, your version number may be different.) Right click on one of the files and open with a text editing software (I use TextEditor), but DO NOT ACTUALLY EDIT THE CODE. The file with the "-prev" extension is the temporary file that VirtualBox makes when you open the software. Sometimes the file without the "-prev" extension doesn't close or save correctly, so you won't see any code when you open it with a text editor. To fix it, move the *CMS-OpenData-1.5.3.vbox* file to a different directory or folder, and rename the *CMS-OpenData-1.5.3.vbox-prev* file to *CMS-OpenData-1.5.3.vbox*. Once you verify that VirtualBox can open correctly again, it's safe to delete the empty file.
+
+This problem can also occur with the VirtualBox software instead of just the virtual machine file. If neither of the two **.vbox** files are empty, navigate in Finder to your home directory. Use keyboard shortcut
+```
+cmd + shift + [.]
+```
+to show any hidden folders. Go into the **Library** folder (it might be greyed out, but still click it), and open the VirtualBox folder. Use the same method as before, but using the *VirtualBox.xml* and *VirtualBox.xml-prev* files instead. 
+
 
 ## Copying Files to the HPC
 You can save files to your personal computer from the virtual machine using UA's High Performance Computer if you get access to it. To do so, connect to the VPN, open a new Terminal (on Mac), and type
