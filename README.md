@@ -128,7 +128,7 @@ Once you type your password, you should see a message that looks like:
 ```
 zJet_cfg.py                                        100% 5250     5.1KB/s   00:00
 ```
-and you can check in Terminal that the file has been successfully copied to your HPC account by typing **ls**.
+and you can check in Terminal that the file has been successfully copied to your HPC account by typing `ls`.
 
 To move the file from the HPC to your local machine, open a new Terminal window. Type the command
 ```
