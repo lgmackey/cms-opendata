@@ -29,13 +29,13 @@ cd ZJetAnalyzer
 ```
 BuildFile.xml   doc   interface   python    src   test    zjetanalyzer_cfg.py
 ```
-A C++ source code file will be automatically created in the **src** directory, so use **cd src** to access it. *zjetanalyzer_cfg.py* is the configuration file that will be used to run the source code. 
+A C++ source code file will be automatically created in the `src` directory, so use `cd src` to access it. `zjetanalyzer_cfg.py` is the configuration file that will be used to run the source code. 
 
-Copy the *zJet_cfg.py* file from this page to the *zjetanalyzer_cfg.py* file in your virtual machine. 
+Copy the `zJet_cfg.py` file from this page to the `zjetanalyzer_cfg.py` file in your virtual machine. 
 
 *Note: it might be easier to rename the file in the VM so that all the file names are consistent and easier to follow along with.*
 
-Move into the **src** directory, and copy the *ZJetAnalyzer.cc* file into the .cc file that was automatically created. 
+Move into the `src` directory, and copy the `ZJetAnalyzer.cc` file into the .cc file that was automatically created. 
 
 With `/home/cms-opendata/workingArea/CMSSW_5_3_32/src/zJetAnalysis/ZJetAnalyzer` as the current folder, run the following commands to download the files needed
 ```
