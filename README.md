@@ -15,17 +15,17 @@ cmsenv
 
 ## Creating an EDAnalyzer Template
 
-##### First, create a directory
+First, create a directory
 ```
 mkdir zJetAnalysis
 cd zJetAnalysis
 ```
-##### Then, make the Analyzer
+Then, make the Analyzer
 ```
 mkedanalyzer ZJetAnalyzer
 cd ZJetAnalyzer
 ```
-##### Now there should be the following seven directories in the ED Analyzer template
+Now there should be the following seven directories in the ED Analyzer template
 ```
 BuildFile.xml   doc   interface   python    src   test    zjetanalyzer_cfg.py
 ```
