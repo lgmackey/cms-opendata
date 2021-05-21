@@ -39,9 +39,9 @@ Sometimes when either the virtual machine or the VirtualBox software itself does
 
 This problem can also occur with the VirtualBox software instead of just the virtual machine file. If neither of the two **.vbox** files are empty, navigate in Finder to your home directory. Use 
 ```
-cmd + shift + .
+cmd + shift + [.]
 ```
-to show any hidden folders. Go into the **Library** folder (it might be greyed out, but still click it), and click the VirtualBox folder. Use the same method as before, but using the *VirtualBox.xml* and *VirtualBox.xml-prev* files. 
+to show any hidden folders. Go into the **Library** folder (it might be greyed out, but still click it), and open the VirtualBox folder. Use the same method as before, but using the *VirtualBox.xml* and *VirtualBox.xml-prev* files instead. 
 
 ## Copying Files to the HPC
 You can save files to your personal computer from the virtual machine using UA's High Performance Computer if you get access to it. To do so, connect to the VPN, open a new Terminal (on Mac), and type
